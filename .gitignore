@@ -1,0 +1,31 @@
+# Rust
+/target/
+**/*.rs.bk
+*.pdb
+Cargo.lock
+
+# IDE / editor
+.claude/
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Debug / coverage
+*.profraw
+*.profdata
+coverage/
+*.gcno
+*.gcda
+
+# Local env
+.env
+.env.*
+
+# OS
+Thumbs.db
+
+# Optional asset downloads (keep repo small; document sources in README)
+/assets/downloads/

@@ -1,0 +1,16 @@
+[package]
+name = "road_intersection"
+version = "0.1.0"
+edition = "2021"
+authors = []
+description = "Traffic intersection simulation with SDL2"
+
+[dependencies]
+sdl2 = "0.34"
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
+lto = true

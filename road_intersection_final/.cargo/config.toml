@@ -1,0 +1,14 @@
+# Homebrew SDL2 on macOS — linker cannot find libSDL2 by default.
+# Linux: install libsdl2-dev; these flags are ignored on non-macOS targets.
+
+[target.aarch64-apple-darwin]
+rustflags = [
+    "-L", "/opt/homebrew/lib",
+    "-L", "/opt/homebrew/opt/sdl2/lib",
+]
+
+[target.x86_64-apple-darwin]
+rustflags = [
+    "-L", "/usr/local/lib",
+    "-L", "/usr/local/opt/sdl2/lib",
+]
